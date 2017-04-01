@@ -18,6 +18,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
+    margin-left: 50px;
+    margin-right: 50px;
     line-height: 1;
 }
 
@@ -45,6 +47,37 @@ table {
 html, body {
     font-size: 16px;
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+img {
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+
+/*fix */
+
+input {
+    border: 10px black;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.byline {
+    margin-bottom: 20px;
+}
+
+.fruit {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 
