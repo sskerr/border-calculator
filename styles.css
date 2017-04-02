@@ -18,9 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    margin-left: 50px;
-    margin-right: 50px;
-    line-height: 1;
+    line-height: 1em;
 }
 
 ol, ul {
@@ -46,7 +44,14 @@ table {
 
 html, body {
     font-size: 16px;
+    font-family: 'Domine', serif;
+    line-height: 1.25em;
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    line-height: 1em;
 }
 
 img {
@@ -56,13 +61,44 @@ img {
     width: auto;
     height: auto;
     margin: auto;
+    margin-top: 10px;
 }
 
 
 /*fix */
 
-input {
-    border: 10px black;
+figcaption {
+    font-size: 12px;
+    color: #808080;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    line-height: 1em;
+}
+
+input[type=text] {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border: 1px solid #818181;
+}
+
+button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    background-color: #555555;
+    color: #FFFFFF;
+    font-family: 'Domine', serif;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.body {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .title {
@@ -74,19 +110,85 @@ input {
     margin-bottom: 20px;
 }
 
+.lead_img {
+    display: block;
+    max-width: 390px;
+    max-height: 390px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 .fruit {
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 10px;
+}
+
+.fruitcap {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 /* Tablet/Desktop overrides */
 
+
+/*
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+
 }
+
+/*
+img {
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+figcaption {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 15px;
+}
+
+.body {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+}
+
+/*
+.body {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.lead_img {
+    display: block;
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+figcaption {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+button {
+    width: 40%;
 }
