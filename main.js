@@ -4,8 +4,18 @@ $(document).ready(function () { //checks if html is fully loaded
 	$("#compute").on("click", function (e) {
 		e.preventDefault();
 		var mango = parseFloat($("#mango").val());
+		var avocado = parseFloat($("#avocado").val());
+		var tomato = parseFloat($("#tomato").val());
+		var banana = parseFloat($("#banana").val());
+		var tangerine = parseFloat($("#tangerine").val());
+		var strawberry = parseFloat($("#strawberry").val());
+		var lime = parseFloat($("#lime").val());
+		var pineapple = parseFloat($("#pineapple").val());
+		var beer = parseFloat($("#beer").val());
+		var tequila = parseFloat($("#tequila").val());
 
-		var total = calculate(mango)
+
+		var total = calculate(mango, avocado, tomato, banana, tangerine, strawberry, lime, pineapple, beer, tequila)
 
 		$("#results").val(total);
 
@@ -15,8 +25,7 @@ $(document).ready(function () { //checks if html is fully loaded
 });
 
 
-function calculate(mango) {
+function calculate(mango, avocado, tomato, banana, tangerine, strawberry, lime, pineapple, beer, tequila) {
 
-	return ((mango * .53) * ((.75 * 1.20) - .75))
-
+	return (((mango * .53) * ((1.75 * 1.20) - 1.75)) + ((avocado * .59) * ((1.5 * 1.20) - 1.5)) + ((tomato * .41) * ((.5 * 1.20) - .5)) + ((banana * .03) * ((.20 * 1.2) - .20)) + ((tangerine * .04) * ((.1 * 1.2) - .1)) + ((strawberry * .08) * ((2.5 * 1.2) - 2.5)) + ((lime * .95) * ((.2 * 1.2) - .2)) + ((tequila * .99) + ((25 * 1.2) - 25))) * 48
 };
