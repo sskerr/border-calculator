@@ -19,6 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1em;
+    background-color: #fffdfa;
 }
 
 ol, ul {
@@ -43,14 +44,15 @@ table {
 /* Start your base/mobile styles here */
 
 html, body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Domine', serif;
     line-height: 1.25em;
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
 }
 
 h1 {
-    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Domine', serif;
+    font-size: 28px;
     line-height: 1em;
 }
 
@@ -60,7 +62,7 @@ img {
     max-height: 150px;
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 10px;
 }
 
@@ -70,8 +72,8 @@ img {
 figcaption {
     font-size: 12px;
     color: #808080;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 5px;
     line-height: 1em;
 }
@@ -80,7 +82,7 @@ input[type=text] {
     display: block;
     text-align: center;
     margin: auto;
-    width: 90%;
+    width: 150px;
     border: 1px solid #818181;
 }
 
@@ -97,31 +99,38 @@ button {
 }
 
 .body {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.body_last {
+    margin: 15px;
 }
 
 .title {
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 90%;
     margin-bottom: 5px;
 }
 
 .byline {
-    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 5px;
+    font-family: 'Space Mono', monospace;
+    color: #B43C2F;
 }
 
 .lead_img {
     display: block;
-    max-width: 390px;
-    max-height: 390px;
-    width: auto;
-    height: auto;
-    margin: auto;
+    max-width: 480px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
 }
 
 .fruit {
-    margin: auto;
-    width: 40%;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -131,64 +140,26 @@ button {
     margin-bottom: 10px;
 }
 
+.results {
+    display: block;
+    text-align: center;
+    width: 40%;
+    border: 1px solid #818181;
+}
+
 
 /* Tablet/Desktop overrides */
 
-
-/*
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-
-
 }
 
-/*
-img {
-    display: block;
-    max-width: 250px;
-    max-height: 250px;
-    width: auto;
-    height: auto;
-    margin: auto;
+.title {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
 }
-
-figcaption {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 15px;
-}
-
-.body {
-    margin-left: 160px;
-    margin-right: 160px;
-}
-
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-
-}
-
-/*
-.body {
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-.lead_img {
-    display: block;
-    max-width: 700px;
-    max-height: 700px;
-    width: auto;
-    height: auto;
-    margin: auto;
-}
-
-figcaption {
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-button {
-    width: 40%;
 }
