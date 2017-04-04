@@ -65,4 +65,4 @@ function showIt(total) {
 
 //function showWall(wall) {
 //("#wall").text(wall);
-//}
+//};
