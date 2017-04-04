@@ -62,62 +62,62 @@
         <div class="fruit">
             <img src="images/mango2.png" />
             <h5 class="fruitcap"> Mangoes </h5>
-            <input type="text" id="mango" placeholder="Mangoes Purchased" />
+            <input type="number" min="0" step="1" id="mango" data-storePrice="1.75" data-likelihood=".53" placeholder="Mangoes Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/avocado.png" />
             <h5 class="fruitcap"> Avocados </h5>
-            <input type="text" id="avocado" placeholder="Avocados Purchased" />
+            <input type="number" id="avocado" placeholder="Avocados Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/tomato.png" />
             <h5 class="fruitcap"> Tomatoes </h5>
-            <input type="text" id="tomato" placeholder="Tomatoes Purchased" />
+            <input type="number" id="tomato" placeholder="Tomatoes Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/banana2.png" />
             <h5 class="fruitcap"> Bananas </h5>
-            <input type="text" id="banana" placeholder="Bananas Purchased" />
+            <input type="number" id="banana" placeholder="Bananas Purchased" />
         </div>
 
 
         <div class="fruit">
             <img src="images/tangerine2.png" />
             <h5 class="fruitcap"> Tangerines </h5>
-            <input type="text" id="tangerine" placeholder="Tangerines Purchased" />
+            <input type="number" id="tangerine" placeholder="Tangerines Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/strawberry3.png" />
             <h5 class="fruitcap"> Strawberries </h5>
-            <input type="text" id="strawberry" placeholder="Strawberries Purchased" />
+            <input type="number" id="strawberry" placeholder="Strawberries Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/lime.png" />
             <h5 class="fruitcap"> Limes </h5>
-            <input type="text" id="lime" placeholder="Limes Purchased" />
+            <input type="number" id="lime" placeholder="Limes Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/pineapple.png" />
             <h5 class="fruitcap"> Pineapple </h5>
-            <input type="text" id="pineapple" placeholder="Pineapples Purchased" />
+            <input type="number" id="pineapple" placeholder="Pineapples Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/beer.png" />
             <h5 class="fruitcap"> Beer </h5>
-            <input type="text" id="beer" placeholder="Beers Purchased" />
+            <input type="number" id="beer" placeholder="Beers Purchased" />
         </div>
 
         <div class="fruit">
             <img src="images/tequila2.png" />
             <h5 class="fruitcap"> Tequila </h5>
-            <input type="text" id="tequila" placeholder="Tequila Purchased" />
+            <input type="number" id="tequila" placeholder="Tequila Purchased" />
         </div>
 
 
@@ -127,8 +127,17 @@
         <button class="fruit" id="compute"> Calculate </button>
 
         <br>
+        <div class="results">
 
-        <input type="text" id="results" placeholder="results" />
+            <p> <span id="final-answer" class="hide"> Through consuming these 10 items, you will contribute </p>
+              <p> <span id="final-results" class="answer"> </span> </p>
+            <p> <span id="final-answer2" class="hide"> dollars to the southern border wall. </p>
+              <br>
+              <p id="wall_answer" class="hide">Your money will build <span id = "wall"></span>
+                <p id="wall_answer2" class="hide"> square feet of the wall.</p>
+                </span>
+
+        </div>
 
         <div class="body_last">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum massa, porttitor at blandit vitae, iaculis quis purus. Duis in augue nec nibh congue scelerisque.</p>

@@ -1,165 +1,264 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+    /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
 
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
 
-/* HTML5 display-role reset for older browsers */
+    body {
+        line-height: 1em;
+        background-color: #fffdfa;
+    }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+    ol, ul {
+        list-style: none;
+    }
 
-body {
-    line-height: 1em;
-    background-color: #fffdfa;
-}
+    blockquote, q {
+        quotes: none;
+    }
 
-ol, ul {
-    list-style: none;
-}
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
 
-blockquote, q {
-    quotes: none;
-}
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* Start your base/mobile styles here */
 
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-}
+    html, body {
+        font-size: 14px;
+        font-family: 'Domine', serif;
+        line-height: 1.25em;
+        /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+    h1 {
+        font-family: 'Domine', serif;
+        font-size: 28px;
+        line-height: 1em;
+    }
 
+    img {
+        display: block;
+        max-width: 150px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    /*fix */
 
-/* Start your base/mobile styles here */
+    figcaption {
+        font-size: 12px;
+        color: #808080;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 5px;
+        line-height: 1em;
+    }
 
-html, body {
-    font-size: 14px;
-    font-family: 'Domine', serif;
-    line-height: 1.25em;
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-}
+    input[type='number'] {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 150px;
+        border: 1px solid #818181;
+    }
 
-h1 {
-    font-family: 'Domine', serif;
-    font-size: 28px;
-    line-height: 1em;
-}
+    button {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 40%;
+        background-color: #555555;
+        color: #FFFFFF;
+        font-family: 'Domine', serif;
+        font-size: 16px;
+        border-radius: 8px;
+    }
 
-img {
-    display: block;
-    max-width: 150px;
-    max-height: 150px;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 10px;
-}
+    span {
+        line-height: 1em;
+    }
 
+    .body {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
-/*fix */
+    .body_last {
+        margin: 15px;
+    }
 
-figcaption {
-    font-size: 12px;
-    color: #808080;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 5px;
-    line-height: 1em;
-}
+    .title {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
 
-input[type=text] {
-    display: block;
-    text-align: center;
-    margin: auto;
-    width: 150px;
-    border: 1px solid #818181;
-}
+    .byline {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 5px;
+        font-family: 'Space Mono', monospace;
+        color: #B43C2F;
+    }
 
-button {
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: 40%;
-    background-color: #555555;
-    color: #FFFFFF;
-    font-family: 'Domine', serif;
-    font-size: 16px;
-    border-radius: 8px;
-}
+    .lead_img {
+        display: block;
+        max-width: 400px;
+        max-height: 400px;
+        width: 100%;
+        height: 100%;
+    }
 
-.body {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+    .fruit {
+        margin: 0 auto;
+        padding: 10px;
+    }
 
-.body_last {
-    margin: 15px;
-}
+    .fruitcap {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-.title {
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 5px;
-}
+    .hide {
+        display: none;
+    }
 
-.byline {
-    margin: 0 auto;
-    width: 90%;
-    margin-bottom: 5px;
-    font-family: 'Space Mono', monospace;
-    color: #B43C2F;
-}
+    .active {
+        display: block;
+    }
 
-.lead_img {
-    display: block;
-    max-width: 480px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
-}
+    .results {
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: block;
+        Font-size: 20px;
+        line-height: 1em;
+        text-align: center;
+        width: 350px;
+        height: 250px;
+    }
 
-.fruit {
-    margin: 0 auto;
-    padding: 10px;
-}
+    .answer {
+        color: #B43C2F;
+        font-size: 4em;
+    }
 
-.fruitcap {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+    #final-results {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* Tablet/Desktop overrides */
 
-.results {
-    display: block;
-    text-align: center;
-    width: 40%;
-    border: 1px solid #818181;
-}
+    @media(min-width: 681px) {
+        /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+        /*.title {
+        padding-left: 20%;
+        padding-right: 20%;
+    } */
+        .lead_img {
+            display: block;
+            max-width: 550px;
+            max-height: 550px;
+            width: 100%;
+            height: 100%;
+        }
+        .body {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        figcaption {
+            font-size: 12px;
+            color: #808080;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 5px;
+            line-height: 1em;
+        }
+        img {
+            display: block;
+            max-width: 250px;
+            max-height: 250px;
+            /*width: 50%;
+        height: auto;
+        float: left;
+        */
+            margin-top: 20px;
+        }
+        input[type=text] {
+            display: block;
+            text-align: center;
+            margin: auto;
+            font-size: 16px;
+            width: 250px;
+            border: 1px solid #818181;
+        }
+        button {
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: 280px;
+            background-color: #555555;
+            color: #FFFFFF;
+            font-family: 'Domine', serif;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+        .body_last {
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 20px;
+        }
+    }
 
-
-/* Tablet/Desktop overrides */
-
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
-
-.title {
-    margin: 0 auto;
-    width: 80%;
-    margin-top: 20px;
-}
-
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-}
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+        .title {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .lead_img {
+            display: block;
+            max-width: 700px;
+            max-height: 700px;
+            width: 100%;
+            height: 100%;
+        }
+        .body {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        figcaption {
+            font-size: 12px;
+            color: #808080;
+            align: left;
+            margin-top: 5px;
+            line-height: 1em;
+        }
+        .body_last {
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 20px;
+        }
+    }
+    /* For desktop add styles - float icons left and width is 20% */
