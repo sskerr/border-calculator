@@ -60,5 +60,5 @@ function showIt(total, sqft) {
 };
 
 function wall(total) {
-	return (total / 99.68);
+	return (total / 189.39);
 };
