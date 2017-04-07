@@ -20,6 +20,7 @@ $(document).ready(function () { //checks if html is fully loaded
 
 
 		var total = calculate(mango, avocado, tomato, banana, tangerine, strawberry, lime, pineapple, beer, tequila);
+		var sqft = wall(total);
 		//	var wall = wall(wall);
 
 		// var total = 0;
@@ -39,9 +40,7 @@ $(document).ready(function () { //checks if html is fully loaded
 		$("#final-answer2").addClass("active");
 		$("#wall_answer").addClass("active");
 		$("#wall_answer2").addClass("active");
-		showIt(total);
-		//	wall(total);
-		//	showWall(wall);
+		showIt(total, sqft);
 
 
 	});
@@ -55,14 +54,11 @@ function calculate(mango, avocado, tomato, banana, tangerine, strawberry, lime, 
 	return (((mango * .53) * ((1.75 * 1.20) - 1.75)) + ((avocado * .59) * ((1.5 * 1.20) - 1.5)) + ((tomato * .41) * ((.5 * 1.20) - .5)) + ((banana * .03) * ((.20 * 1.2) - .20)) + ((tangerine * .04) * ((.1 * 1.2) - .1)) + ((strawberry * .08) * ((2.5 * 1.2) - 2.5)) + ((lime * .95) * ((.2 * 1.2) - .2)) + ((tequila * .99) + ((25 * 1.2) - 25))) * 48
 };
 
-function showIt(total) {
+function showIt(total, sqft) {
 	$("#final-results").text(total.toFixed(2));
+	$("#wall").text(sqft.toFixed(2));
 };
 
-//function wall(total) {
-//return (total / 99.68);
-//};
-
-//function showWall(wall) {
-//("#wall").text(wall);
-//};
+function wall(total) {
+	return (total / 99.68);
+};
