@@ -341,4 +341,7 @@ a {
         font-weight: bold;
         line-height: 1.25em;
     }
+    .results {
+        height: 450px;
+    }
 }
